@@ -1,0 +1,244 @@
+* {
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/******** HEADER ********/
+
+.header{
+    background-color: rgba(236, 242, 255, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 350px;
+    display: inline-block;
+
+}
+h3{
+    color: rgba(62, 84, 172, 1);
+    font-family: 'Bruno Ace', cursive;
+    font-size: 14px;
+}
+#selector_talles{
+    background-color: rgba(236, 242, 255, 1);
+    border-radius: 8%;
+    border-color: rgba(62, 84, 172, 1);
+    color: rgba(62, 84, 172, 1);
+    font-family: 'Bruno Ace', cursive;
+    font-size: 14px;
+    padding: 5px;
+    margin: 5px;
+}
+.boton{
+  color: rgba(62, 84, 172, 1);
+  background-color:  rgba(236, 242, 255, 1);
+  border-radius: 8%;
+  border-color: rgba(62, 84, 172, 1);
+  width: 190px;
+  font-family: 'Bruno Ace', cursive;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+
+/******** BODY ********/
+
+.body{
+    background-color: rgba(62, 84, 172, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+section{
+    width: 100%;
+    margin: 0px;
+}
+img{
+    width: 205px;
+    height: 145px;
+    border-radius: 10%;
+}
+.nombre {
+  font-family: 'Bruno Ace', cursive;
+  font-size: 100%;
+  font-weight: bold;
+  color: rgba(236, 242, 255, 1);
+  padding: 10px;
+  width: 100%;
+  display: inline-block;
+}
+.precio {
+    font-family: 'Bruno Ace', cursive;
+    font-size: 100%;
+    font-weight: bold;
+    color: rgba(62, 84, 172, 1);
+    background: rgba(236, 242, 255, 1);
+    padding: 10px;
+    border-radius: 25px 0px 25px 0px;
+    width: 40%;
+    display: inline-block;
+}
+hr{
+    height: 1px;
+}
+.container-zapas{
+    margin: 50px 10px 50px 10px;
+
+    max-width: 275px;
+    max-height: 200px;
+}
+#zapas:hover{
+    transform: scale(1.1);
+}
+.link-talles{
+  display: none;
+}
+
+
+/******** FOOTER ********/
+
+footer{
+    background-color: rgba(236, 242, 255, 1);
+    text-align: center;
+}
+p{
+    color: black;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+}
+#venta{
+    padding: 10px 0 10px 0;
+    background-color: rgba(151, 165, 223, 0.76);
+}
+.medios-de-pago{
+    display: flex;
+    color: rgb(25, 25, 180);
+    margin-left: 10px;
+}
+.envios{
+    display: flex;
+    color: gray;
+    margin-left: 10px;
+}
+.xmayor{
+    display: flex;
+    color: green;
+    margin-left: 10px;
+}
+.derechos{
+    background-color: rgb(210, 215, 224) ;
+    margin: 10px 0 10px 0;
+}
+h4{
+    color: black;
+    font-size: 70%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.banner{
+  height: 100px;
+  width: 100%;
+  background-image: url("../img/banner-zapas.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  }
+  #img-logo{
+    object-fit: contain;
+  }
+
+
+/******** TABLET ********/
+
+@media (min-width: 768px){
+    .body{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    img{
+      height: 180px;
+      width: 275px;
+      object-fit: cover;
+    }
+    .container-zapas{
+        max-height: 200px;
+        max-width: 355px;
+        margin-bottom: 70px;
+    }
+    .banner{
+      background-position: center;
+      height: 420px;
+      }
+
+
+}
+
+/******** PC ********/
+
+@media (min-width: 1024px){
+        .container-zapas{
+            max-height: 23%;
+            max-width: 321px;
+        }
+        .header{
+            flex-direction: row;
+            justify-content: left;
+        }
+        .logo{
+            width: 20%;
+        }
+        .catalogo{
+            position: absolute;
+            right: 5%;
+        }
+
+        .derechos{
+            text-align: center;
+        }
+        .link-talles{
+          display:block;
+          font-size: 20px;
+          width: 100%;
+          position: absolute;
+
+        }
+        .talles{
+          display: none;
+        }
+        h3{
+          font-size: 20px;
+        }
+        .body{
+          padding-bottom: 0px;
+        }
+      }
+
+
+        @media (min-width: 1440px){
+            .container-zapas{
+            max-width: 340px;
+        }
+
+      }
+
+        @media (min-width: 1920px){
+            .container-zapas{
+            max-width: 360px;
+        }
+            .banner{
+            height: 500px;
+            }
+      }

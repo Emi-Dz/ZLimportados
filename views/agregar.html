@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar producto</title>
+</head>
+<body>
+    <h1>AGREGAR PRODUCTO</h1>
+
+    <h4>Ingrese los datos de la prenda.</h4>
+
+    <form method="POST" action="../public/php/agregar.php" enctype="multipart/form-data">
+        <label>Marca</label>
+        <input type="text" name="marca" placeholder="Marca" required>
+        <br><br>
+        <label>Nombre</label>
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <br><br>
+        <label>Talle</label>
+        <input type="text" name="talle" placeholder="Talle" required>
+        <br><br>
+        <label>Cantidad</label>
+        <input type="text" name="cantidad" placeholder="Cantidad" required>
+        <br><br>
+        <label>Precio</label>
+        <input type="text" name="precio" placeholder="Precio" required>
+        <br><br>
+
+        <textarea name="leyenda" placeholder="Leyenda" rows="8" cols="80" required></textarea>
+        <br><br>
+        <label>Imagen 1</label>
+        <input type="file" name="imagen" placeholder="imagen">
+        <br><br>
+        <label>Imagen 2</label>
+        <input type="file" name="imagen2" placeholder="imagen2">
+        <br><br>
+        <label>Imagen 3</label>
+        <input type="file" name="imagen3" placeholder="imagen3">
+
+        <br><br><br>
+        <input type="submit" name="submit" value="Agregar" onclick="return confirm('¿Agregar producto?')">
+    </form>
+    <br>
+    <button type="submit"><a href="lista.php">Cancelar</a></button>
+
+
+</body>
+</html>
